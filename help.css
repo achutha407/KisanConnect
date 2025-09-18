@@ -1,0 +1,112 @@
+/* Navbar (reuse your glassy nav) */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; 
+  gap: 50px;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+.nav-links li a.active, .nav-links li a:hover {
+  color: #00FF00;
+  border-bottom: 2px solid #00FF00;
+}
+
+/* Body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  padding-top: 80px; /* navbar offset */
+}
+
+/* Help Section */
+.help {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+.help h1 {
+  color: #00FF00;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.help p {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form label {
+  font-weight: bold;
+  color: #00FF00;
+}
+form input, form textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  resize: none;
+}
+form input::placeholder, form textarea::placeholder {
+  color: #aaa;
+}
+form button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #00FF00;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+form button:hover {
+  background-color: #00cc00;
+}
+#responseMsg {
+  margin-top: 15px;
+  text-align: center;
+  color: #00FF00;
+  font-weight: bold;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00FF00; /* bright green */
+}
+
+/* If you want your own logo image instead */
+.logo img {
+  height: 40px;
+  width: auto;
+}

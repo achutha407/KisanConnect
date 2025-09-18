@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KisanConnect - Weather</title>
+  <link rel="stylesheet" href="weather.css">
+    <link rel="icon" href="assests/favicom.png" type="image/x-icon">
+  <script defer src="weather.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assests/favicom.png" alt="Logo" class="logo-img">
+      <span style="color:#00FF00; font-weight:bold;">KisanConnect</span>
+    </div>
+    <ul class="nav-links">
+       <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="soil.html">Soil Guide</a></li>
+      <li><a href="weather.html" class="active">Weather</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="creators.html">Creators</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </nav>
+
+  <!-- Weather Section -->
+  <section class="weather">
+    <h1>🌤️ Weather Forecast</h1>
+    <p>Get live updates on temperature, humidity, and rainfall predictions.</p>
+
+    <!-- Search -->
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name...">
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <!-- Weather Card -->
+    <div id="weatherCard" class="card hidden">
+      <h2 id="cityName">City</h2>
+      <h3 id="condition">Condition</h3>
+      <p><strong>🌡️ Temp:</strong> <span id="temperature"></span>°C</p>
+      <p><strong>💧 Humidity:</strong> <span id="humidity"></span>%</p>
+      <p><strong>🌬️ Wind:</strong> <span id="wind"></span> km/h</p>
+    </div>
+  </section>
+</body>
+</html>

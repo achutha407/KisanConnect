@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KisanConnect - Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="icon" href="assests/favicom.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>Loading Dashboard...</p>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assests/favicom.png" alt="Logo">
+      <span>KisanConnect</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="soil.html">Soil Guide</a></li>
+      <li><a href="weather.html">Weather</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="creators.html">Creators</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dashboard -->
+  <section class="dashboard">
+    <div class="timestamp">
+      <span id="clock"></span> | Last Updated: <span id="lastUpdated">--:--:--</span>
+    </div>
+
+    <h1>Live Farm Data</h1>
+    <div class="cards-container">
+
+      <!-- Moisture Card -->
+      <div class="card">
+        <h2>Soil Moisture</h2>
+        <p id="moistureValue">--%</p>
+        <canvas id="moistureChart"></canvas>
+      </div>
+
+      <!-- Temperature Card -->
+      <div class="card">
+        <h2>Temperature</h2>
+        <p id="tempValue">--°C</p>
+        <canvas id="tempChart"></canvas>
+      </div>
+
+      <!-- Humidity Card -->
+      <div class="card">
+        <h2>Day light</h2>
+        <p id="humidityValue">--%</p>
+        <canvas id="humidityChart"></canvas>
+      </div>
+
+      <!-- Field 4 Card -->
+      <div class="card">
+        <h2>Tank Water Level</h2>
+        <p id="field4Value">--</p>
+        <canvas id="field4Chart"></canvas>
+      </div>
+
+      <!-- Field 5 Card -->
+      <div class="card">
+        <h2>Humidity</h2>
+        <p id="field5Value">--</p>
+        <canvas id="field5Chart"></canvas>
+      </div>
+
+      <button id="downloadBtn">Download CSV</button>
+
+    </div>
+
+    <h2>Farm Location</h2>
+    <div id="map"></div>
+
+  </section>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

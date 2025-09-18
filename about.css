@@ -1,0 +1,90 @@
+/* Navbar (reuse your glassy nav) */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; 
+  gap: 50px;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+.nav-links li a.active, .nav-links li a:hover {
+  color: #00FF00;
+  border-bottom: 2px solid #00FF00;
+}
+
+/* Body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  padding-top: 80px; /* navbar offset */
+}
+
+/* About Section */
+.about {
+  padding: 40px 20px;
+}
+.about h1 {
+  color: #00FF00;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.component-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.component-list li img {
+  width: 80px;          /* fixed width */
+  height: 80px;         /* fixed height */
+  object-fit: contain;  /* keeps aspect ratio without stretching */
+  border-radius: 25%;   /* circular images */
+  border: 2px solid #00FF00; /* optional green border */
+  margin-right: 15px;
+}
+
+.component-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,255,0,0.4);
+}
+.component-list li .name {
+  color: #00FF00;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00FF00; /* neon green */
+}

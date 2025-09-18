@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KisanConnect</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assests/favicom.png" type="image/x-icon">
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assests/favicom.png" alt="Logo">
+      <span>KisanConnect</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="soil.html">Soil Guide</a></li>
+      <li><a href="weather.html">Weather</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="creators.html">Creators</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <video autoplay muted loop id="heroVideo">
+      <source src="banner.mp4" type="video/mp4">
+    </video>
+   <div class="hero-text">
+  <h1 id="typed-heading">KisanConnect<span id="cursor">_</span></h1>
+  <p>Connecting farmers with tech</p>
+  <button onclick="scrollToDashboard()">Explore Dashboard</button>
+</div>
+
+  </section>
+
+
+  <section id="importance" class="importance-section">
+  <h2>Why Agriculture Matters</h2>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="assests/plant (1).png" alt="Farm 1">
+      <p>70% of rural households depend on agriculture.</p>
+    </div>
+    <div class="grid-item">
+      <img src="assests/plant (2).png" alt="Farm 2">
+      <p>Food security is a global priority.</p>
+    </div>
+    <div class="grid-item">
+      <img src="assests/plant (3).png" alt="Farm 3">
+      <p>Modern technology can improve yields.</p>
+    </div>
+    <div class="grid-item">
+      <img src="assests/plant (4).png" alt="Farm 4">
+      <p>Sustainable practices protect the environment.</p>
+    </div>
+    <div class="grid-item">
+      <img src="assests/plant (5).png" alt="Farm 5">
+      <p>Farmers are the backbone of our economy.</p>
+    </div>
+    <!-- Add more items as needed -->
+  </div>
+</section>
+
+<section id="dashboard" class="dashboard-section">
+  <h2>Live Farm Data</h2>
+  <div class="cards-container">
+    <div class="card" id="soilCard">
+      <h3>Soil Moisture</h3>
+      <p id="soilValue">42%</p>
+    </div>
+    <div class="card" id="tempCard">
+      <h3>Temperature</h3>
+      <p id="tempValue">28°C</p>
+    </div>
+    <div class="card" id="humidityCard">
+      <h3>Humidity</h3>
+      <p id="humidityValue">61%</p>
+    </div>
+  </div>
+
+  <canvas id="soilGraph" width="400" height="150"></canvas>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>🌾 Empowering Farmers, Connecting Fields to the Future.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

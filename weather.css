@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding-top: 80px; /* space for navbar */
+  text-align: center;
+}
+
+/* Navbar (from your snippet) */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; 
+  gap: 50px;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+.nav-links li a.active, .nav-links li a:hover {
+  color: #00FF00;
+  border-bottom: 2px solid #00FF00;
+}
+
+/* Weather Section */
+.weather {
+  padding: 40px;
+}
+.search-box {
+  margin: 20px 0;
+}
+.search-box input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+}
+.search-box button {
+  background: #00FF00;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.search-box button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Weather Card */
+.card {
+  background: #111;
+  padding: 20px;
+  margin: 20px auto;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  text-align: center;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.hidden {
+  display: none;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00FF00; /* bright green */
+}
+
+/* If you want your own logo image instead */
+.logo img {
+  height: 40px;
+  width: auto;
+}

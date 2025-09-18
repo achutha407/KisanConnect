@@ -1,0 +1,109 @@
+/* Navbar (reuse your glassy nav) */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; 
+  gap: 50px;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+.nav-links li a.active, .nav-links li a:hover {
+  color: #00FF00;
+  border-bottom: 2px solid #00FF00;
+}
+
+/* Body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  padding-top: 80px; /* offset navbar */
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: #00FF00;
+  margin-bottom: 10px;
+}
+.hero span {
+  color: #fff;
+  font-weight: bold;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Creators Grid */
+.creators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+.creator-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.creator-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0,255,0,0.5);
+}
+.creator-card img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid #00FF00;
+}
+.creator-card h2 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #00FF00;
+}
+.creator-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00FF00; /* bright green */
+}
+
+/* If you want your own logo image instead */
+.logo img {
+  height: 40px;
+  width: auto;
+}

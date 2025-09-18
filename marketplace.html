@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KisanConnect - Marketplace</title>
+  <link rel="stylesheet" href="markerplace.css">
+    <link rel="icon" href="assests/favicom.png" type="image/x-icon">
+  <script defer src="marketplace.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar glass">
+    <div class="logo">
+      <img src="assests/favicom.png" alt="Logo" class="logo-img">
+      <span>KisanConnect</span>
+    </div>
+        <ul class="nav-links">
+       <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html" >Dashboard</a></li>
+      <li><a href="soil.html">Soil Guide</a></li>
+      <li><a href="weather.html">Weather</a></li>
+      <li><a href="marketplace.html" class="active">Marketplace</a></li>
+      <li><a href="creators.html">Creators</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </nav>
+
+  <!-- Marketplace Hero -->
+  <section class="hero">
+    <h1>🛒 Marketplace</h1>
+    <p>Everything your farm needs – seeds, fertilizers, tools, and more.</p>
+  </section>
+
+  <!-- Filter -->
+  <div class="filter">
+    <label for="category">Filter:</label>
+    <select id="category">
+      <option value="all">All</option>
+      <option value="fertilizer">Fertilizers</option>
+      <option value="seeds">Seeds</option>
+      <option value="tools">Tools</option>
+      <option value="pesticides">Pesticides</option>
+    </select>
+  </div>
+
+  <!-- Products Grid -->
+  <section class="products" id="products">
+    <!-- Sample Cards -->
+    <div class="card" data-category="fertilizer">
+      <img src="assests/fert.png" alt="Fertilizer">
+      <h3>Urea Fertilizer</h3>
+      <p>Boosts soil nitrogen for crops</p>
+      <span>₹450 / 50kg</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card" data-category="seeds">
+      <img src="assests/paddy.png" alt="Seeds">
+      <h3>Paddy Seeds</h3>
+      <p>High yield Cauvery variety</p>
+      <span>₹120 / kg</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card" data-category="tools">
+      <img src="assests/tractor.png" alt="Tool">
+      <h3>Hand Tractor</h3>
+      <p>Compact & affordable</p>
+      <span>₹25,000</span>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+</body>
+</html>

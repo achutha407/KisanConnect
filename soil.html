@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KisanConnect - Soil Guide</title>
+  <link rel="stylesheet" href="soil.css">
+    <link rel="icon" href="assests/favicom.png" type="image/x-icon">
+  <script defer src="soil.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar glass">
+    <div class="logo">
+      <img src="assests/favicom.png" alt="Logo" class="logo-img">
+      <span>KisanConnect</span>
+    </div>
+   <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html" >Dashboard</a></li>
+      <li><a href="soil.html" class="active">Soil Guide</a></li>
+      <li><a href="weather.html">Weather</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="creators.html">Creators</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </nav>
+
+  <!-- Soil Guide Section -->
+  <section class="soil-guide">
+    <h1>Soil & Crop Guide</h1>
+    <p>Select your soil type and moisture to get crop & fertilizer suggestions.</p>
+
+    <!-- Soil Type Selector -->
+    <div class="soil-types">
+      <div class="soil-card" data-soil="black">
+        <img src="assests/black.png" alt="Black Soil">
+        <p>Black Soil</p>
+      </div>
+      <div class="soil-card" data-soil="red">
+        <img src="assests/red.png" alt="Red Soil">
+        <p>Red Soil</p>
+      </div>
+      <div class="soil-card" data-soil="alluvial">
+        <img src="assests/aluv.png" alt="Alluvial Soil">
+        <p>Alluvial Soil</p>
+      </div>
+      <div class="soil-card" data-soil="sandy">
+        <img src="assests/sandy.png" alt="Sandy Soil">
+        <p>Sandy Soil</p>
+      </div>
+      <div class="soil-card" data-soil="clayey">
+        <img src="assests/caly.png" alt="Clayey Soil">
+        <p>Clayey Soil</p>
+      </div>
+    </div>
+
+    <!-- Moisture Slider -->
+    <div class="moisture">
+      <label for="moistureLevel">Moisture Level (%)</label>
+      <input type="range" id="moistureLevel" min="0" max="100" step="10" value="50">
+      <span id="moistureValue">50%</span>
+    </div>
+
+    <!-- Suggestion Result -->
+    <div id="suggestion" class="suggestion-card">
+      <h2>👉 Select soil type & moisture to see suggestions!</h2>
+
+      
+    </div>
+    
+  </section>
+</body>
+</html>

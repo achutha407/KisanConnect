@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KisanConnect | Help</title>
+  <link rel="stylesheet" href="help.css">
+    <link rel="icon" href="assests/favicom.png" type="image/x-icon">
+</head>
+<body>
+  <!-- Navbar -->
+ <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assests/favicom.png" alt="Logo" class="logo-img">
+      <span style="color:#00FF00; font-weight:bold;">KisanConnect</span>
+    </div>
+    <ul class="nav-links">
+       <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="soil.html">Soil Guide</a></li>
+      <li><a href="weather.html" >Weather</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="creators.html">Creators</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="help.html" class="active">Help </a></li>
+    </ul>
+  </nav>
+
+  <!-- Help Section -->
+  <section class="help">
+    <h1>Need Assistance?</h1>
+    <p>Submit your feedback or ask a question and we will get back to you.</p>
+
+    <form id="helpForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="responseMsg"></p>
+  </section>
+
+  <script src="help.js"></script>
+</body>
+</html>
